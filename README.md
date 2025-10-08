@@ -1,2 +1,2 @@
 # College-Chatbot
-Developed an AI-powered College Chatbot using Flask, TensorFlow, and NLP to automate responses for BCET Durgapur’s student queries regarding courses, faculty, and campus facilities.
+An AI-driven conversational assistant built using Flask, TensorFlow/Keras, and Natural Language Processing (NLP) to automate query handling for BCET Durgapur. The chatbot intelligently responds to student questions related to admissions, courses, faculty, and campus facilities. It features a web-based UI for real-time interaction and leverages a custom-trained model for improved accuracy and contextual understanding.
