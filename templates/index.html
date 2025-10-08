@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BCET Chatbot</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fcb1d3, #ff89a3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .chat-container {
+      width: 400px;
+      height: 620px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .chat-header {
+      background: #1e3a8a;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .chat-box {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .message {
+      display: flex;
+      align-items: flex-start;
+      max-width: 80%;
+    }
+    .bot-msg {
+      background: #e4ecff;
+      align-self: flex-start;
+      border-radius: 10px 10px 10px 4px;
+    }
+    .user-msg {
+      background: #ffdee6;
+      align-self: flex-end;
+      flex-direction: row-reverse;
+      border-radius: 10px 10px 4px 10px;
+    }
+    .message span {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+    .message img {
+      width: 24px;
+      height: 24px;
+      margin: 0 0.5rem;
+    }
+    .input-area {
+      display: flex;
+      padding: 0.6rem;
+      border-top: 1px solid #ddd;
+    }
+    input {
+      flex: 1;
+      font-size: 1rem;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+    button {
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.1rem;
+      margin-left: 0.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">🎓 BCET College Chatbot</div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Ask something..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatBox = document.getElementById("chat-box");
+    const userInput = document.getElementById("user-input");
+
+    function addMessage(msg, isUser) {
+      const msgDiv = document.createElement("div");
+      msgDiv.className = `message ${isUser ? "user-msg" : "bot-msg"}`;
+      msgDiv.innerHTML = `
+        <img src="${isUser ? "static/img/user.png" : "static/img/bot.png"}" />
+        <span>${msg}</span>`;
+      chatBox.appendChild(msgDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function sendMessage() {
+      const msg = userInput.value.trim();
+      if (!msg) return;
+      addMessage(msg, true);
+      userInput.value = "";
+      fetch("/get", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: "msg=" + encodeURIComponent(msg)
+      })
+      .then(res => res.json())
+      .then(data => addMessage(data.response, false));
+    }
+
+    userInput.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") sendMessage();
+    });
+  </script>
+</body>
+</html>

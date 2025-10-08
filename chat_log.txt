@@ -1,0 +1,72 @@
+
+[2025-06-18 08:40:39]
+User: hello
+Bot: Hi there! Ask me anything about BCET.
+
+[2025-06-18 08:40:51]
+User: bcet full form
+Bot: I'm sorry, I didn't understand that.
+
+[2025-06-18 08:40:58]
+User: bcet
+Bot: I'm sorry, I didn't understand that.
+
+[2025-06-18 08:41:01]
+User: hey
+Bot: Hello! I'm BCET Chatbot. How can I help you today?
+
+[2025-06-18 08:41:09]
+User: dcuhauc
+Bot: I'm sorry, I didn't understand that.
+
+[2025-06-18 08:41:21]
+User: locations
+Bot: BCET is located at DA-6, Sector-III, Bidhannagar, Durgapur – 713212, West Bengal.
+
+[2025-06-18 08:41:32]
+User: fees
+Bot: B.Tech fee: approx ₹4-4.8 Lakh total. MBA: ₹2.6 Lakh. Hostel charges: ₹56,000 to ₹70,000 per semester.
+
+[2025-06-18 08:50:06]
+User: hello
+Bot: Hello! I'm BCET Chatbot. How can I help you today?
+
+[2025-06-18 08:50:15]
+User: bcet full form
+Bot: I'm sorry, I didn't understand that.
+
+[2025-06-18 08:50:19]
+User: locations
+Bot: BCET is located at DA-6, Sector-III, Bidhannagar, Durgapur – 713212, West Bengal.
+
+[2025-06-18 08:50:25]
+User: fees
+Bot: B.Tech fee: approx ₹4-4.8 Lakh total. MBA: ₹2.6 Lakh. Hostel charges: ₹56,000 to ₹70,000 per semester.
+
+[2025-06-18 08:50:29]
+User: courses
+Bot: BCET offers B.Tech (CSE, ECE, EE, ME, CE, IT, EEE), BBA, BCA, MBA, MCA, B.Pharm, and Nursing programs.
+
+[2025-06-18 08:50:37]
+User: bcet courses
+Bot: BCET offers B.Tech (CSE, ECE, EE, ME, CE, IT, EEE), BBA, BCA, MBA, MCA, B.Pharm, and Nursing programs.
+
+[2025-06-18 08:50:44]
+User: bcet fess
+Bot: I'm sorry, I didn't understand that.
+
+[2025-06-18 08:50:54]
+User: bcetfees
+Bot: I'm sorry, I didn't understand that.
+
+[2025-06-18 08:51:00]
+User: bcet fees
+Bot: B.Tech fee: approx ₹4-4.8 Lakh total. MBA: ₹2.6 Lakh. Hostel charges: ₹56,000 to ₹70,000 per semester.
+
+[2025-06-18 08:51:14]
+User: fest
+Bot: I'm sorry, I didn't understand that.
+
+[2025-06-18 08:51:22]
+User: culture
+Bot: I'm sorry, I didn't understand that.

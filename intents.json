@@ -1,0 +1,64 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening"],
+      "responses": ["Hello! I'm BCET Chatbot. How can I help you today?", "Hi there! Ask me anything about BCET."]
+    },
+    {
+      "tag": "about",
+      "patterns": ["Tell me about BCET", "What is BCET?", "BCET info", "Give me details of BCET"],
+      "responses": ["Bengal College of Engineering and Technology (BCET), Durgapur was established in 2001. It is approved by AICTE, affiliated to MAKAUT, and accredited by NAAC."]
+    },
+    {
+      "tag": "location",
+      "patterns": ["Where is BCET located?", "BCET location", "Address of BCET"],
+      "responses": ["BCET is located at DA-6, Sector-III, Bidhannagar, Durgapur – 713212, West Bengal."]
+    },
+    {
+      "tag": "courses",
+      "patterns": ["What courses does BCET offer?", "Available courses", "Programs at BCET", "Degrees offered"],
+      "responses": ["BCET offers B.Tech (CSE, ECE, EE, ME, CE, IT, EEE), BBA, BCA, MBA, MCA, B.Pharm, and Nursing programs."]
+    },
+    {
+      "tag": "fees",
+      "patterns": ["What is the fee structure?", "Tuition fees", "Hostel fees"],
+      "responses": ["B.Tech fee: approx ₹4-4.8 Lakh total. MBA: ₹2.6 Lakh. Hostel charges: ₹56,000 to ₹70,000 per semester."]
+    },
+    {
+      "tag": "placements",
+      "patterns": ["What about placements?", "Companies visiting BCET", "Average package"],
+      "responses": ["BCET has 85-90% placement. Top recruiters: TCS, Wipro, Capgemini, Amazon. Avg. package: ₹3.5-4 LPA. Highest: ₹10 LPA."]
+    },
+    {
+      "tag": "festivals",
+      "patterns": ["College fest", "Events in BCET", "Annual fest", "Tech fest"],
+      "responses": ["BCET hosts Exotica (Cultural fest), Techtronix (Technical fest), Annual Day, and Sports Meet."]
+    },
+    {
+      "tag": "hostel",
+      "patterns": ["Hostel facility", "BCET hostel", "Hostel charges"],
+      "responses": ["BCET has separate boys and girls hostels with mess, Wi-Fi, gym and reading rooms. Fees range from ₹56,000 to ₹70,000 per semester."]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": ["Does BCET provide scholarships?", "Scholarship programs", "Fee waiver"],
+      "responses": ["Yes. SVMCM, SC/ST/OBC, Kanyashree, and merit-based scholarships are available for eligible students."]
+    },
+    {
+      "tag": "admission",
+      "patterns": ["How to get admission?", "BCET admission process", "Admission criteria"],
+      "responses": ["Admission in B.Tech is through WBJEE or JEE Main. MBA through MAT/JEMAT. Management quota is also available."]
+    },
+    {
+      "tag": "contact",
+      "patterns": ["BCET contact", "Phone number", "Email address"],
+      "responses": ["Phone: +91-343-2533189 | Email: info@bcetdgp.ac.in | Website: www.bcetdgp.ac.in"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "Thanks", "Talk later"],
+      "responses": ["Goodbye! Feel free to ask me anything about BCET anytime."]
+    }
+  ]
+}
